@@ -9,16 +9,14 @@ public class Sword implements Serializable {
     private int currentXP;
     private int currentLevel;
     private int currentPrestige;
-    private String itemName;
     private int calculateRequiredXP(int level){
         return progression.get(level-1);
     }
 
-    public Sword(String itemName){
+    public Sword(){
         this.currentXP = 0;
         this.currentLevel = 0;
         this.currentPrestige = 0;
-        this.itemName = itemName;
     }
 
     public void addXP(int gainedXP){
@@ -46,9 +44,5 @@ public class Sword implements Serializable {
 
     public int getCurrentPrestige() {
         return currentPrestige;
-    }
-
-    public String getItemName(){
-        return itemName;
     }
 }
