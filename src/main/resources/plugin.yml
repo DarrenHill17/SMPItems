@@ -1,0 +1,4 @@
+name: SMPItems
+version: '${project.version}'
+main: org.phlyer.smpitems.SMPItems
+api-version: '1.20'
