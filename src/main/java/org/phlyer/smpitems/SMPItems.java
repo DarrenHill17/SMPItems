@@ -6,7 +6,7 @@ public final class SMPItems extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getServer().getPluginManager().registerEvents(new ItemsManager(), this);
+        getServer().getPluginManager().registerEvents(new SwordManager(), this);
     }
 
     @Override
